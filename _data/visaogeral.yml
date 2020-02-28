@@ -1,7 +1,24 @@
-- name: "Problema"
+- name: "problema"
   title: Problema
-  paragrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
-  image: img/imagem.jpg
-  link: Link
-  linkurl: "http://tinkercad.com"
+  conteudo:
+    paragrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
+    image: img/imagem.jpg
+    legenda: "Figura 1 - Teste legenda"
+    paragrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
+    image: img/imagem.jpg
+    legenda: "Figura 2 - Teste legenda"
+    link: Link
+    linkurl: "http://tinkercad.com"
+
+- name: "objetivo"
+  title: Objetivo
+  conteudo:
+    paragrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
+    image: img/imagem.jpg
+    legenda: "Figura 3 - Teste legenda"
+    paragrafo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing."
+    image: img/imagem.jpg
+    legenda: "Figura 4 - Teste legenda"
+    link: Link
+    linkurl: "http://tinkercad.com"
 

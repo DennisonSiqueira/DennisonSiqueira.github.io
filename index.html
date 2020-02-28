@@ -15,38 +15,26 @@ meta: Projeto Fablab
 {% for item in site.data.visaogeral %}
 
 			<div class="col-md-6"><a id={{item.name}} name={{item.name}}></a>
-				<br>
-				<img src="{{site.baseurl}}{{item.image}}"/><br>
 			</div> <!-- col -->
-
+<div align=center>
 			<div class="col-md-6" align=center>
+				
 				<h3> {{item.title}} </h3>
 				<br>
-				<p> {{item.paragrafo}} </p>
-				<br>
-				<img src="{{site.baseurl}}{{item.image}}"/>
-				<br>
-				<ul style="list-style: outside;">
 					<!-- test -->
-					{% for prop in item.machineprops %}
-					<li><strong class="text-capitalize">{{prop[0]}}: </strong> {{prop[1]}}</li>
+					{% for prop in item.conteudo %}
+					{% if prop[0] = "paragrafo" %} <p> {{prop[1]}} </p><br> {% endif %}
+					{% if prop[0] = "imagem" %} <img src="{{prop[1]}}"/><br> {% endif %}
+					{% if prop[0] = "legenda" %} <p><small> {{prop[1]}} </small></p><br><br> {% endif %}
+					
 					{% endfor %}
 					{% if item.link != "" %}<li><strong>About the use:</strong><a target="_blank" href={{item.linkurl}}> {{item.link}}</a></li>{% endif %}
 					<br><br><br>
 					<!-- test -->
-				</ul>
 			</div> <!-- col -->
 			<div class="container" id="separator-pages-top"></div>
 
 			{% endfor %}
-
-
-
-<a id="descricao"> </a>
-
-<a id="objetivo"> </a>
-
-<a id="metodologia"> </a>
 
 
 {% include eu_projects.html %}

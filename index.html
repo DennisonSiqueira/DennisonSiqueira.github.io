@@ -14,7 +14,7 @@ meta: Projeto Fablab
 
 {% for item in site.data.visaogeral %}
 
-			<div class="col-md-6"><a name={{item.name}}></a>
+			<div class="col-md-6"><a id={{item.name}} name={{item.name}}></a>
 				<br>
 				<img src="{{site.baseurl}}{{item.image}}"/><br>
 			</div> <!-- col -->
@@ -22,19 +22,20 @@ meta: Projeto Fablab
 			<div class="col-md-6" align=center>
 				<h3> {{item.title}} </h3>
 				<br>
+				<p> {{item.paragrafo}} </p>
+				<br>
+				<img src="{{site.baseurl}}{{item.image}}"/>
+				<br>
 				<ul style="list-style: outside;">
 					<!-- test -->
 					{% for prop in item.machineprops %}
 					<li><strong class="text-capitalize">{{prop[0]}}: </strong> {{prop[1]}}</li>
 					{% endfor %}
-					{% if item.use != "" %}<li><strong>About the use:</strong><a target="_blank" href={{item.useurl}}> {{item.use}}</a></li>{% endif %}
+					{% if item.link != "" %}<li><strong>About the use:</strong><a target="_blank" href={{item.linkurl}}> {{item.link}}</a></li>{% endif %}
 					<br><br><br>
 					<!-- test -->
 				</ul>
 			</div> <!-- col -->
-
-			<!--------------------------------- machine list item ----------------------------->
-
 			<div class="container" id="separator-pages-top"></div>
 
 			{% endfor %}

@@ -13,31 +13,34 @@ meta: Projeto Fablab
 
 
 {% for item in site.data.visaogeral %}
-
-			<div class="col-md-6"><a id={{item.name}} name={{item.name}}></a>
-			</div> <!-- col -->
-<div align=center>
-			<div class="col-md-6" align=center>
-				
-				<br>
-				<br>
-				<h3> {{item.title}} </h3>
-				<br>
-					<!-- test -->
-					{% for prop in item.conteudo %}
-					{% if prop[0] = "paragrafo" %} <p> {{prop[1]}} </p><br> {% endif %}
-					{% if prop[0] = "imagem" %} <img src="{{prop[1]}}"/><br> {% endif %}
-					{% if prop[0] = "legenda" %} <p><small> {{prop[1]}} </small></p><br><br> {% endif %}
-					
-					{% endfor %}
-					{% if item.link != "" %}<li><strong>About the use:</strong><a target="_blank" href={{item.linkurl}}> {{item.link}}</a></li>{% endif %}
-					<br><br><br>
-					<!-- test -->
-			</div> <!-- col -->
+	{% if {{item.tipo}} = "titulo" %}
+		<div class="col-md-6"><a id={{item.conteudo}} name={{item.conteudo}}></a>
+		</div> <!-- col -->
+		<div class="col-md-6" align=center>	
+			<br>
+			<br>
+			<h3> {{item.conteudo}} </h3>
 			<div class="container" id="separator-pages-top"></div>
-
-			{% endfor %}
-
+			<br>	
+		</div>
+	{% endif %}
+	{% if {{item.tipo}} = "paragrafo" %}
+		<div class="col-md-6">
+		</div> <!-- col -->
+		<div class="col-md-6" align=center>	
+			<p> {{item.conteudo}} </p>
+			<br>
+		</div>
+	{% endif %}
+	{% if {{item.tipo}} = "imagem" %}
+		<div class="col-md-6">
+		</div> <!-- col -->
+		<div class="col-md-6" align=center>	
+			<img src="{{item.endereco}}"/><br>
+			<p><small> {{item.conteudo}} </small></p>
+			<br>
+		</div>
+	{% endif %}
 
 {% include eu_projects.html %}
 

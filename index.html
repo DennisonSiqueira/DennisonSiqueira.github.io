@@ -28,7 +28,7 @@ meta: Projeto Fablab
 			<div class="col-md-6">
 				{% if item.titulo != "" %}<h3> {{item.titulo}} </h3><br>{% endif %}
 
-					{% for prop in item %}
+					{% for prop in item.conteudo %}
 				<p><strong class="text-capitalize">{{prop[0]}}: </strong> {{prop[1]}}</p>
 					{% endfor %}
 					{% if item.use != "" %}<strong>About the use:</strong><a target="_blank" href={{item.useurl}}> {{item.use}}</a>{% endif %}

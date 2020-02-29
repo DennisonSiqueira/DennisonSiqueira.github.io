@@ -15,21 +15,18 @@ meta: Projeto Fablab
 <section id="machines">
 	<div class="container">
 		<div class="row">
-
-			<!--------------------------------- machine list item ----------------------------->
-
 			{% for item in site.data.visaogeral %}
-
-			<div class="col-md-6"><a id={{item.name}} name={{item.name}}></a>
+			<div class="col-md-6">
 				<br>
 				<img src="{{site.baseurl}}{{item.image}}"/><br>
 			</div> <!-- col -->
-
 			<div class="col-md-6">
-				{% if item.titulo != "" %}<h3> {{item.titulo}} </h3><br>{% endif %}
-
+				{% if item.titulo != "" %}<h3> {{item.titulo}} </h3><a id={{item.name}} name={{item.name}}></a><br>{% endif %}
 					{% for prop in item.conteudo %}
-				<p><strong class="text-capitalize">{{prop[0]}}: </strong> {{prop[1]}}</p>
+						<p><strong class="text-capitalize">{{prop[0]}}: </strong> {{prop[1]}}</p>
+						{% if {{prop[0]}} == "texto" %}<p>{{prop[1]}}"</p><br>{% endif %}
+						{% if {{prop[0]}} == "imagem" %}<img src="{{site.baseurl}}{{prop[1]}}"/><br>{% endif %}
+						{% if {{prop[0]}} == "legenda" %}<p><small>{{prop[1]}}"</small></p><br>{% endif %}
 					{% endfor %}
 					{% if item.use != "" %}<strong>About the use:</strong><a target="_blank" href={{item.useurl}}> {{item.use}}</a>{% endif %}
 					<br><br><br>

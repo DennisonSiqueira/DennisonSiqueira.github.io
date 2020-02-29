@@ -16,10 +16,7 @@ meta: Projeto Fablab
 	<div class="container">
 		<div class="row">
 			{% for item in site.data.visaogeral %}
-			<div class="col-md-2">
-				<br>
-				<img src="{{site.baseurl}}{{item.image}}"/><br>
-			</div> <!-- col -->
+		
 			<div class="col-md-8">
 				{% if item.titulo != "" %}<br><h3> {{item.titulo}} </h3><a id={{item.name}} name={{item.name}}></a><br>{% endif %}
 					{% for prop in item.conteudo %}

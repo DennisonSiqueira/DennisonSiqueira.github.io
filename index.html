@@ -11,42 +11,7 @@ meta: Projeto Fablab
 
 </header><!-- site-header -->
 
-
-{% for item in site.data.visaogeral %}
-	{% if {{item.tipo}} = "titulo" %}
-		<div class="col-md-6"><a id={{item.conteudo}} name={{item.conteudo}}></a>
-		</div> <!-- col -->
-		<div class="col-md-6" align=center>	
-			<br>
-			<br>
-			<h3> {{item.conteudo}} </h3>
-			<div class="container" id="separator-pages-top"></div>
-			<br>	
-		</div>
-	{% endif %}
-	{% if {{item.tipo}} = "paragrafo" %}
-		<div class="col-md-6">
-		</div> <!-- col -->
-		<div class="col-md-6" align=center>	
-			<p> {{item.conteudo}} </p>
-			<br>
-		</div>
-	{% endif %}
-	{% if {{item.tipo}} = "imagem" %}
-		<div class="col-md-6">
-		</div> <!-- col -->
-		<div class="col-md-6" align=center>	
-			<img src="{{item.endereco}}"/><br>
-			<p><small> {{item.conteudo}} </small></p>
-			<br>
-		</div>
-	{% endif %}
-
-{% include eu_projects.html %}
-
-
-
-{% include content_blocks.html %}
+<br><br><h3>Título</h3><br>
 
 <div class="container">
   <div id="separator"></div>

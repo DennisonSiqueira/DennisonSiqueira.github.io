@@ -18,19 +18,19 @@ meta: Projeto Fablab
 			<div class="col-md-2">
 				
 			</div> <!-- col -->
+			<div class="col-md-8">
 			{% for item in site.data.visaogeral %}
 		
 			
-			<div class="col-md-8">
 				{% if item.titulo != "" %}<br><h3> {{item.titulo}} </h3><a id={{item.titulo}} name={{item.name}}></a><br>{% endif %}
 					{% for prop in item.conteudo %}
 						{% if {{prop[0]}} == "texto" %}<p>{{prop[1]}}</p><br>{% endif %}
 						{% if {{prop[0]}} == "imagem" %}<img align=center src="{{site.baseurl}}{{prop[1]}}"/><br>{% endif %}
 						{% if {{prop[0]}} == "legenda" %}<p  align=center ><small>{{prop[1]}}</small></p><br>{% endif %}
 					{% endfor %}
-			</div> <!-- col -->
 			
 			{% endfor %}
+			</div> <!-- col -->
 			<div class="col-md-2">
 			</div> <!-- col -->
 			

@@ -19,7 +19,7 @@
             <div class="dropdown-menu">
                 
                 {% for item in site.data.visaogeral %}
-				    {% if item.titulo != "" %}<a class="dropdown-item {% if page.url == '/index.html#{{item.titulo}}' %}active{% endif %}" href="{{site.baseurl}}/index.html#descricao">Descrição</a>{% endif %}
+				    {% if item.titulo != "" %}<a class="dropdown-item {% if page.url == '/index.html#{{item.titulo}}' %}active{% endif %}" href="{{site.baseurl}}/index.html#{{item.titulo}}">{{item.titulo}}</a>{% endif %}
 				{% endfor %}
                
     

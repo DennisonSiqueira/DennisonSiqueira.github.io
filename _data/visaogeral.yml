@@ -1,24 +1,24 @@
-- name: "inicio"
-  titulo: Início
+- name: "problema"
+  titulo: Problema
   conteudo:
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
     legenda: Legenda 1
-- name: "inicio2"
-  titulo:
-  conteudo:
-    texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-    imagem: 
-    legenda: 
 - name: "objetivo"
   titulo: Objetivo
-  conteudo:
-    texto: Objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos.
+  conteudo: Legenda 2
+    texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
-    legenda:
-    - name: "Problema"
-  titulo: Problema
+    legenda: 
+- name: "resultados"
+  titulo: Resultados
   conteudo:
     texto: Objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos.
     imagem: /img/machines/machines_1.jpg
     legenda: Legenda 3
+    - name: "Licença"
+  titulo: Licença
+  conteudo:
+    texto: Objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos.
+    imagem: /img/machines/machines_1.jpg
+    legenda: Legenda 4

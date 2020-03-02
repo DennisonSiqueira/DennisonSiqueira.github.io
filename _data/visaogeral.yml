@@ -4,3 +4,21 @@
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
     legenda: 
+- name: "lucas"
+  titulo: Lucas
+  conteudo:
+    texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+    imagem: /img/machines/machines_1.jpg
+    legenda: 
+- name: "Wanderson"
+  titulo: Wanderson
+  conteudo:
+    texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+    imagem: /img/machines/machines_1.jpg
+    legenda: 
+- name: "dennison"
+  titulo: Dennison
+  conteudo:
+    texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+    imagem: /img/machines/machines_1.jpg
+    legenda: 

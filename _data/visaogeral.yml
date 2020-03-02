@@ -2,23 +2,6 @@
   titulo: Problema
   conteudo:
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-    imagem: /img/machines/machines_1.jpg
-    legenda: Legenda 1
-- name: "objetivo"
-  titulo: Objetivo
-  conteudo: Legenda 2
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
     legenda: 
-- name: "resultados"
-  titulo: Resultados
-  conteudo:
-    texto: Objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos.
-    imagem: /img/machines/machines_1.jpg
-    legenda: Legenda 3
-    - name: "Licença"
-  titulo: Licença
-  conteudo:
-    texto: Objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos objetivos.
-    imagem: /img/machines/machines_1.jpg
-    legenda: Legenda 4

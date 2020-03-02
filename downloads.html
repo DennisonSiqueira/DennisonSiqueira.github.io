@@ -21,11 +21,11 @@ meta: Projeto Fablab
 			<div class="col-md-8">
       
       
-			<br><h3>Arquivos para download</h3><a id=download name={{item.name}}></a><br>
+			<br><h2>Arquivos para download</h2><a id=download name={{item.name}}></a><br>
       
 			{% for item in site.data.downloads %}
 		
-				{% if item.titulo != "" %}<br><h2> {{item.titulo}}: </h2><a id={{item.titulo}} name={{item.name}}></a><br>{% endif %}
+				{% if item.titulo != "" %}<br><h3> {{item.titulo}}: </h3><a id={{item.titulo}} name={{item.name}}></a><br>{% endif %}
 					{% for prop in item.conteudo %}
 						{% if {{prop[0]}} == "texto" %}<p>{{prop[1]}}</p><br>{% endif %}
 						{% if {{prop[0]}} == "imagem" %}<img align=middle src="{{site.baseurl}}{{prop[1]}}"/><br>{% endif %}

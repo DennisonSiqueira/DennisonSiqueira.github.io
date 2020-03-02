@@ -41,11 +41,9 @@
               <a class="dropdown-item" target="_blank" href="#">Testes</a>
             </div> <!-- dropdown-menu-->
           </li>
-
+		
+          <li class="nav-item {% if page.url == '/downloads.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/downloads.html">Dowloads</a></li>
           <li class="nav-item {% if page.url == '/about_us.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/about_us.html">Sobre Nós</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/fablabbcn/fablabbcn-web/blob/master/{{page.path}}">Help us fix this page!</a></li>
         </ul><!-- nav navbar-nav navbar-right -->
       </div><!-- navbar-collapse collapse -->
-
   </nav><!-- navbar navbar-inverse navbar-fixed-top-->
-

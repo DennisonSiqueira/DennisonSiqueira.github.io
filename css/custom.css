@@ -3,7 +3,7 @@
 Aqua:		#29dcd9
 Dark-gray:  #3d3d3d
 White:      #FFFFFF
-
+Azul sesnai :#49ACC8
 */
 
 /* ==== GLOBAL ================================================================  GLOBAL =================== */  
@@ -25,18 +25,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 a:link {
-	color: #29dcd9;
+	color: #49ACC8;
 }
 
 a:visited{
-	color: #29dcd9;
+	color: #49ACC8;
     text-decoration: underline;
 
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #29dcd9;
+	color: #49ACC8;
 }
 
 img {
@@ -88,7 +88,7 @@ ol {
 
 .separator-solid{
 	position: relative;
-	background-color: #29dcd9;
+	background-color: ##49ACC8;
 	height: 45px;
 	padding-left: 15px;
 	padding-top: 10px;
@@ -201,7 +201,7 @@ iframe {
 }
 
 .dropdown-item:hover{
-	color: grey;
+	color: white;
 }
 /* ======= collaborations ======== */
 
@@ -488,7 +488,7 @@ iframe {
 }
 
 #pages-social-icons li a:hover{
-    color: #29dcd9 !important;
+    color: #49ACC8 !important;
 }
 
 

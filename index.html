@@ -22,7 +22,7 @@ meta: Projeto Fablab
 			{% for item in site.data.visaogeral %}
 		
 			
-				{% if item.titulo != "" %}<br><h3> {{item.titulo}} </h3><a id={{item.titulo}} name={{item.name}}></a><br>{% endif %}
+				{% if item.titulo != "" %}<a id={{item.titulo}} name={{item.name}}></a><br><h2> {{item.titulo}} </h2><br>{% endif %}
 					{% for prop in item.conteudo %}
 						{% if {{prop[0]}} == "texto" %}<p>{{prop[1]}}</p><br>{% endif %}
 						{% if {{prop[0]}} == "imagem" %}<img align=middle src="{{site.baseurl}}{{prop[1]}}"/><br>{% endif %}

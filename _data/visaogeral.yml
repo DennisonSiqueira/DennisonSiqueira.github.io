@@ -1,7 +1,6 @@
-- name: "problema"
-  titulo: Problema
+- name: "renan"
+  titulo: Renan
   conteudo:
-    texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
     legenda: 

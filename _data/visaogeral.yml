@@ -1,23 +1,23 @@
-- name: "renan"
-  titulo: Renan
+- name: "problema"
+  titulo: Problema
   conteudo:
     texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     imagem: /img/machines/machines_1.jpg
     legenda: 
-- name: "lucas"
-  titulo: Lucas
+- name: "objetivo"
+  titulo: Objetivo
   conteudo:
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
     legenda: 
-- name: "Wanderson"
-  titulo: Wanderson
+- name: "Justificativa"
+  titulo: Justificativa
   conteudo:
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg
     legenda: 
-- name: "dennison"
-  titulo: Dennison
+- name: "Metodologia"
+  titulo: Metodologia
   conteudo:
     texto: Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
     imagem: /img/machines/machines_1.jpg

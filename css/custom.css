@@ -185,7 +185,7 @@ iframe {
 /* ==== Navigation =============================================================  Navigation =============== */
 
 .navbar{
-	background-color: black;
+	background-color: blue;
 	color: white;
 }
 .navbar a{
@@ -193,11 +193,11 @@ iframe {
 }
 
 .navbar a:hover{
-	background-color: black;
+	background-color: blue;
 }
 
 .dropdown-menu {
-	background-color: black;
+	background-color: blue;
 }
 
 .dropdown-item:hover{

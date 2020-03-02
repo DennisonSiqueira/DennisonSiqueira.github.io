@@ -1,0 +1,48 @@
+---
+layout: default
+meta: Projeto Fablab
+---
+
+<!-- ==== Navbar ==== -->
+
+<header>
+
+  {% include nav.html %}
+
+</header><!-- site-header -->
+
+<br><br>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				
+			</div> <!-- col -->
+			<div class="col-md-8">
+      
+      
+			<br><h3>Arquivos para download</h3><a id=download name={{item.name}}></a><br>
+      
+			{% for item in site.data.downloads %}
+		
+				{% if item.titulo != "" %}<br><h2> {{item.titulo}}: </h2><a id={{item.titulo}} name={{item.name}}></a><br>{% endif %}
+					{% for prop in item.conteudo %}
+						{% if {{prop[0]}} == "texto" %}<p>{{prop[1]}}</p><br>{% endif %}
+						{% if {{prop[0]}} == "imagem" %}<img align=middle src="{{site.baseurl}}{{prop[1]}}"/><br>{% endif %}
+						{% if {{prop[0]}} == "legenda" %}<p  align=center ><small>{{prop[1]}}</small></p><br>{% endif %}
+					{% endfor %}
+			
+			{% endfor %}
+			</div> <!-- col -->
+			<div class="col-md-2">
+			</div> <!-- col -->
+			
+		</div> <!-- container -->
+	</div> <!-- container -->
+</section>
+
+<div class="container">
+  <div id="separator"></div>
+</div>
+
+{% include footer.html %}

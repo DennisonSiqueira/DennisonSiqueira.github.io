@@ -12,34 +12,18 @@ title: Downloads
 </header><!-- site-header -->
 
 <br><br>
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">
-				
-			</div> <!-- col -->
-			<div class="col-md-8">
-      
-      
-			<br><h2>Arquivos para download</h2><a id=download name={{item.name}}></a><br>
-      
-			{% for item in site.data.downloads %}
-		
-				{% if item.titulo != "" %}<br><h3> {{item.titulo}}: </h3><a id={{item.titulo}} name={{item.name}}></a>{% endif %}
-					{% for prop in item.conteudo %}
-						{% if {{prop[0]}} == "texto" %}<p>{{prop[1]}}</p><br>{% endif %}
-						{% if {{prop[0]}} == "imagem" %}<img align=middle src="{{site.baseurl}}{{prop[1]}}"/><br>{% endif %}
-						{% if {{prop[0]}} == "legenda" %}<p  align=center ><small>{{prop[1]}}</small></p><br>{% endif %}
-						{% if {{prop[0]}} == "link" %}{% if {{item.conteudo.link}} == "" %}<a  href="{{site.baseurl}}{{item.conteudo.linkurl}} >{{prop[1]}}</a><br>{% endif %}{% endif %}
-					{% endfor %}
-			
-			{% endfor %}
-			</div> <!-- col -->
-			<div class="col-md-2">
-			</div> <!-- col -->
-			
-		</div> <!-- container -->
-	</div> <!-- container -->
+{% for item in site.data.content_blocks %}
+
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="content-blocks-button">
+      <a href={{item.url}}>
+        <img src="{{site.baseurl}}{{item.image}}" class="img-fluid" />
+        <h2 class="content-blocks-text"> {{item.headline}}</h2>
+      </a>
+    </div>
+  </div>
+
+  {% endfor %}
 </section>
 
 <div class="container">

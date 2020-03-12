@@ -24,18 +24,23 @@
               <a class="dropdown-item" target="_blank" href="#">Pesquisa</a>
             </div>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tutorial</a>
+		
+	<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tutorial</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item {% if page.url == '/fab_kids.html' %}active{% endif %}" href="http://kids.fablabbcn.org/">Arquivos</a>
-              <a class="dropdown-item {% if page.url == '/fabricademy.html' %}active{% endif %}" href="{{site.baseurl}}/fabricademy.html">Materiais</a>
-              <a class="dropdown-item" href="#">Códigos</a>
-              <a class="dropdown-item" target="_blank" href="#">Eletônica</a>
-              <a class="dropdown-item" target="_blank" href="#">Montagem</a>
-              <a class="dropdown-item" target="_blank" href="#">Testes</a>
-            </div> <!-- dropdown-menu-->
+                
+                {% for item in site.data.tutorial %}
+				    {% if item.titulo != "" %}<a class="dropdown-item {% if page.url == '/index.html#{{item.titulo}}' %}active{% endif %}" href="{{site.baseurl}}/index.html#{{item.titulo}}">{{item.titulo}}</a>{% endif %}
+				{% endfor %}
+               
+    
+                
+                
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" target="_blank" href="#">Pesquisa</a>
+            </div>
           </li>
+
 		
           <li class="nav-item {% if page.url == '/downloads.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/downloads.html">Dowloads</a></li>
           <li class="nav-item {% if page.url == '/about_us.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/about_us.html">Sobre Nós</a></li>

@@ -185,7 +185,7 @@ iframe {
 /* ==== Navigation =============================================================  Navigation =============== */
 
 .navbar{
-	background-color: blue;
+	background-color: black;
 	color: white;
 }
 .navbar a{
@@ -447,26 +447,26 @@ iframe {
 
 
 #header-pages-blog-title {
-	background: url('../img/banner_pages/header_1.jpg') no-repeat; 
+	background: url('../img/banner_pages/Banner.JPG') no-repeat; 
 	background-size: cover ;
 	text-align: center;
 }
 
 #header-pages-about-us-title {
-	background: url('../img/banner_pages/header_1.jpg') no-repeat; 
+	background: url('../img/banner_pages/Banner.JPG') no-repeat; 
 	background-size: cover ;
 	text-align: center;
 }
 
 #header-pages-contact-title {
-	background: url('../img/banner_pages/header_3.jpg') no-repeat; 
+	background: url('../img/banner_pages/Banner.JPG') no-repeat; 
 	background-size: cover ;
 	text-align: center;
 }
 
 
 #header-pages-blog-title h2, #header-pages-about-us-title h2,  #header-pages-contact-title h2 {
-	padding: 30px 0 30px 0px;
+	padding: 50px 0 50px 0px;
 	vertical-align: middle;
 	text-align: center; 
     color: white;

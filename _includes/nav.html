@@ -30,20 +30,18 @@
             <div class="dropdown-menu">
                 
                 {% for item in site.data.tutorial %}
-				    {% if item.titulo != "" %}<a class="dropdown-item {% if page.url == '/index.html#{{item.titulo}}' %}active{% endif %}" href="{{site.baseurl}}/index.html#{{item.titulo}}">{{item.titulo}}</a>{% endif %}
+				    {% if item.titulo != "" %}<a class="dropdown-item {% if page.url == '/tutorial.html#{{item.titulo}}' %}active{% endif %}" href="{{site.baseurl}}/tutorial.html#{{item.titulo}}">{{item.titulo}}</a>{% endif %}
 				{% endfor %}
-               
-    
+  
                 
-                
-                <div class="dropdown-divider"></div>
-              <a class="dropdown-item" target="_blank" href="#">Pesquisa</a>
+                <!--div class="dropdown-divider"></div-->
+              <!--a class="dropdown-item" target="_blank" href="#">Pesquisa</a-->
             </div>
           </li>
 
 		
           <li class="nav-item {% if page.url == '/downloads.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/downloads.html">Dowloads</a></li>
-          <li class="nav-item {% if page.url == '/about_us.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/about_us.html">Sobre Nós</a></li>
+          <li class="nav-item {% if page.url == '/sobre.html' %}active{% endif %}"><a class="nav-link" href="{{site.baseurl}}/sobre.html">Sobre Nós</a></li>
         </ul><!-- nav navbar-nav navbar-right -->
       </div><!-- navbar-collapse collapse -->
   </nav><!-- navbar navbar-inverse navbar-fixed-top-->
